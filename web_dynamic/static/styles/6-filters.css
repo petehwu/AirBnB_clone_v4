@@ -25,6 +25,9 @@
 .container .filters .amenities {
 	width: 25%;
 }
+.container .filters .amenities .ul {
+	list-style-type: none;
+}
 
 .container .filters button {
 	font-size: 18px;
@@ -83,7 +86,9 @@
 	padding: 30px 40px 40px 30px;
 	margin: 15px -1px 0 -1px;
 }
-
+.container .filters .popover .checkbox {
+	margin-right: 10px;
+}
 .container .filters .popover ul {
 	list-style-type: none;
 	padding-left: 20px;
