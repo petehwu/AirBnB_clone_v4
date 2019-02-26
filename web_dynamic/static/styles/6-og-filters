@@ -4,7 +4,7 @@
  */
 
 .container .filters {
-	height: 100%;;
+	height: 70px;
 	background-color: #FFFFFF;
 	width: 100%;
 	border: 1px solid #DDDDDD;
@@ -18,7 +18,7 @@
 }
 
 .container .filters .locations {
-	width: 35%;
+	width: 25%;
 	border-right: 1px solid #DDDDDD;
 }
 
@@ -84,9 +84,7 @@
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	padding: 30px 40px 40px 30px;
-	margin: 0px -1px 0 -1px;
-	position: absolute;
-	width: 25%;
+	margin: 15px -1px 0 -1px;
 }
 .container .filters .popover .checkbox {
 	margin-right: 10px;
