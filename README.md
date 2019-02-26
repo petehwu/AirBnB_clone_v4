@@ -210,9 +210,19 @@ create: create [ARG] [PARAM 1] [PARAM 2] ...
 Uses [Travis-CI](https://travis-ci.org/) to run all tests on all commits to the
 github repo
 
+### Usage
+After database setup is complete, issue the following command to start the API server:
+```
+$ HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db HBNB_API_PORT=5001 python3 -m api.v1.app
+```
+Then issue the following command to star the Flask server:
+```
+$ HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python3 -m web_dynamic.100-hbnb
+```
+After both the API server and Flask server are running, point your browser to http://127.0.0.1:5000/100-hbnb to test locally
 
 ## Authors
-# Peter Wu, [@petehwu](https://github.com/petehwu)
+* Peter Wu, [@petehwu](https://github.com/petehwu)
 * MJ Johnson, [@mj31508](https://github.com/mj31508)
 * David John Coleman II, [davidjohncoleman.com](http://www.davidjohncoleman.com/) | [@djohncoleman](https://twitter.com/djohncoleman)
 * Kimberly Wong, [kjowong](https://github.com/kjowong) | [@kjowong](https://twitter.com/kjowong) | [kjowong@gmail.com](kjowong@gmail.com)
