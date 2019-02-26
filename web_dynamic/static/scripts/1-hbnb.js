@@ -1,19 +1,19 @@
 $(function () {
   let checked = {};
-  let check_list = [];
-  let out_string = '';
+  let checkList = [];
+  let outString = '';
   $('input:checkbox').change(function () {
     if ($(this).is(':checked')) {
-      checked[$( this ).attr('data-id')] = $( this ).attr('data-name');
+      checked[$(this).attr('data-id')] = $(this).attr('data-name');
     } else {
-      delete checked[$( this ).attr('data-id')];
+      delete checked[$(this).attr('data-id')];
     }
-    check_list = [];
-    out_string = '';
+    checkList = [];
+    outString = '';
     for (let index in checked) {
-      check_list.push(checked[index]);
+      checkList.push(checked[index]);
     }
-    out_string = check_list.join(', ');
-    $('div.amenities').find('h4').text(out_string);
+    outString = checkList.join(', ');
+    $('div.amenities').find('h4').text(outString);
   });
 });
